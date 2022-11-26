@@ -11,6 +11,7 @@
     --clr-secondary-1:#FF0077;
     --font-primary: 'Lora', serif;
     --font-secondary:'Poppins', sans-serif;
+    --dark-black: #313131;
 }
 a{
     color: var(--clr-secondary-1);
@@ -379,11 +380,11 @@ h3 span:before{
   }
   .item {
     width: 30%;
-    display: inline-block;
+    display:block;
     margin-top: 2rem;
-    filter: grayscale(0%);
+    filter: grayscale(10%);
     float:right;
-    /* padding:110px 0 100px 0; */
+
   }
   .item .polaroid:before {
     content: '';
@@ -422,16 +423,10 @@ h3 span:before{
     transition: all 0.35s;
   }
 .section-intro {
-	max-width: 700px;
-	margin-left: auto;
-	margin-right: auto;
-	text-align: center;
-	/* margin-bottom: 3.6rem; */
-	position: relative;
+	display: flex;
+  flex-direction: row;
 }
-.portfolio{
-  padding-top: -100px;
-}
+
 .section-intro h5 {
 	color: #FF0077;
 	font-size: 1.6rem;
@@ -458,8 +453,9 @@ padding-top: 6rem;
 
     text-align: center;
 }
+/* about section */
 
-#about {
+/* #about {
 	background: #FFFFFF;
 	padding-top: 1.5rem;
 	padding-bottom: 5rem;
@@ -468,12 +464,7 @@ padding-top: 6rem;
 	margin-bottom: 3rem;
 }
 
-.intro-info {
-	margin-top: 4.2rem;
-	margin-right: -30px;
-  margin-left: -30px;
- 
-}
+
 .intro-info img {
 	height: 9rem;
   width: 9rem;
@@ -482,11 +473,13 @@ padding-top: 6rem;
 	float: left;
 }
 
-.intro-info .lead {
-	  text-align: left;
+
+ .intro-info .lead {
+	  /* text-align: left; 
     padding-left: 15rem;
     font-size: 1rem;
-}
+    font-weight: 700;
+}  
 
 /* resume modal class */
 .modal-dialog.wide {
@@ -752,7 +745,19 @@ padding-top: 6rem;
     color: var(--clr-primary-1);
   }
   /* skills */
-  .skills {
+  .toolkit-items{
+    font-size: 50px;
+  margin: 15px;
+  padding: 10px ;
+  opacity: 0.93;
+  border: 1.7px solid rgba(232, 127, 200, 0.637) ;
+  border-radius: 5px ;
+  display: table ;
+  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) ;
+  overflow: hidden ;
+  transition: all 0.4s ease 0s ;
+  }
+  /* .skills {
     width: 10rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
@@ -760,19 +765,22 @@ padding-top: 6rem;
     padding-left: 12rem;
   }
   .skills li {
-    text-transform: uppercase;
-  display: flex;
-  align-items: center;
-  letter-spacing: 1px;
-  color: var(--clr-primary-2);
-  margin-right: 0.25rem;
+  text-transform: uppercase;
+  display: inline-flex;
+ border-radius: 10px;
+  color: var(--dark-black);
+ justify-content: center;
+ align-items: center;
+  margin: 5px;
   font-size: 1rem;
   font-weight: 600;
   position: relative;
   background-color: var(--clr-primary-5);
-  padding-bottom: 5px;
+  /* padding-bottom: 5px; 
+  border: 1px solid #FF0077;
+  padding: 0.5rem 1rem;
   }
-  
+   */
 
 
 
