@@ -1,237 +1,289 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CM"s Portfolio</title>
-     <link href="./Assets/images/favicon_io (1)/favicon.ico" rel="shortcut icon" type="image/x-icon" /> 
-    <link rel="stylesheet" href="/Assets/flexslider/flexslider.css"/>
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-   <link href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap" rel="stylesheet">
+    <link
+      href="./Assets/images/favicon_io (1)/favicon.ico"
+      rel="shortcut icon"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="/Assets/flexslider/flexslider.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lora&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
     <!-- internal link -->
-    <link rel="stylesheet" href="/css/animate.css">
-    <link rel="stylesheet" href="./css/style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="/css/animate.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
     <header id="home">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="menu-wrap">
-    
-                    <nav class="menu">
-                        <div class="icon-list">
-                            <a href="index.html#home"><i class="fa fa-fw fa-home"></i>Home</a>
-                            <a href="index.html#about">About</a>
-                            <a href="index.html#portfolio">Portfolio</a>
-                            <a href="index.html#contact">Contact</a>
-                        </div>
-                    </nav>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="menu-wrap">
+            <nav class="menu">
+              <div class="icon-list">
+                <a href="index.html#home"
+                  ><i class="fa fa-fw fa-home"></i>Home</a
+                >
+                <a href="index.html#about">About</a>
+                <a href="index.html#portfolio">Portfolio</a>
+                <a href="index.html#contact">Contact</a>
+              </div>
+            </nav>
+          </div>
+          <button class="menu-button" id="open-button"></button>
+        </div>
+      </div>
+
+      <section class="hero" id="hero">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-right navicon">
+              <a id="nav-toggle" class="nav_slide_button" href="./index.html"
+                ><span></span
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- projects -->
+    <section class="portfolio" id="portfolio">
+      <div class="row">
+        <div class="col-lg-12 project-info-page">
+          <h5>Project Work</h5>
+        </div>
+        <!-- container style card -->
+        <div class="section-center blog-center">
+          <!-- single article -->
+          <div class="card">
+            <!-- front of the card -->
+            <div class="card-side card-front">
+              <img src="/Assets/projects img/Netflix.png" alt="shoopingcart" />
+              <div class="card-info">
+                <h4>Netflix-clone</h4>
+                <p>
+                  This project is a simplified Front-End Clone of Netflix.It
+                  uses the TMDB movieDB API to fetch movies.
+                </p>
+                <div class="card-footer">
+                  <!-- <img src="/Assets/images/lake.jpg" alt="Netflix image" /> -->
+                  <p>HTML5,CSS3,ReatJS,Node.js,Axios,Firebase</p>
                 </div>
-                <button class="menu-button" id="open-button"></button>
+                <div class="card-content">
+                  <a href="" id="deployed-btns"
+                    ><i class="fa fa-link"></i> Live Website</a
+                  >
+                  <a href="" id="deployed-btns"
+                    ><i class="fa fa-github"></i> github</a
+                  >
+                </div>
+              </div>
             </div>
-        </div>
-       
-        <section class="hero" id="hero">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12 text-right navicon">
-                      <a id="nav-toggle" class="nav_slide_button" href="./index.html"><span></span></a>
-                    </div>
-                  </div>
+          </div>
+          <div class="card">
+            <!-- front of the card -->
+            <div class="card-side card-front">
+              <img
+                src="/Assets/projects img/shoopingcart.png"
+                alt="shoopingcart"
+              />
+              <div class="card-info">
+                <h4>PlantyVibes</h4>
+                <p>
+                  This website mainly focuse on Shooping cart feature.it
+                  displays dynamic products using Vanilla Javascript.
+                </p>
+                <div class="card-footer">
+                  <p>Vanilla javascript,HTML5,CSS3</p>
+                </div>
+                <div class="card-content">
+                  <a href="" id="deployed-btns"
+                    ><i class="fa fa-link"></i> Live Website</a
+                  >
+                  <a href="" id="deployed-btns"
+                    ><i class="fa fa-github"></i> github</a
+                  >
+                </div>
+              </div>
             </div>
-            </section>
-        </header>
+            <!-- card back  -->
+          </div>
+          <div class="card">
+            <!-- front of the card -->
+            <div class="card-side card-front">
+              <img src="/Assets/projects img/weatherapp.png" alt="project1" />
+              <div class="card-info">
+                <h4>Weatherly App</h4>
+                <p>
+                  This Application built with NodeJs, EJS, ExpressJs using
+                  HTML5,CSS3,weather Ajaxlibrary webAPI.
+                </p>
+                <div class="card-footer">
+                  <p>Nodejs,Ejs,WebAPI</p>
+                </div>
+                <div class="card-content">
+                  <a href="" id="deployed-btns"
+                    ><i class="fa fa-link"></i> Live Website</a
+                  >
+                  <a href="" id="deployed-btns"
+                    ><i class="fa fa-github"></i> github</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- second -->
 
-<!-- projects -->
-<section class="portfolio" id="portfolio">
-    <div class=" row project-info"> 
-       <div class="col-md-12" style="text-align: center;">
-     <h5>Project Work</h5>
-    </div> 
-<!-- container style card -->
-<div class="section-center blog-center">
-    <div class="card">
-    <!-- front of the card -->
-    <div class="card-side card-front">
-      <img src="/Assets/projects img/Netflix.png" alt="shoopingcart" />
-      <div class="card-info">
-        <h4>Netflix-clone</h4>
-        <p>
-          This project is a simplified Front-End Clone of Netflix.It uses the TMDB movieDB API to fetch movies.
-        </p>
-        <div class="card-footer">
-          <img src="/Assets/images/lake.jpg" alt="Netflix image" />
-          <p>HTML5,CSS3,ReatJS,Node.js,Axios,Firebase</p>
-        </div>
-      </div>
-    </div>
-    <!-- card back  -->
-    <div class="card-side card-back">
-        <a href ="https://netflix-clone-6a5fc.web.app/ "><button class="btn td-btn outline green mt-30">Try it Live</a></button>
-         <a href="https://github.com/chaitali72/NetflixClone-MERN"><i class="fab fa-github"></a></i>
-        </div>
-    </div>
-  <!-- single article -->
-  <div class="card">
-    <!-- front of the card -->
-    <div class="card-side card-front">
-      <img src="/Assets/projects img/shoopingcart.png" alt="shoopingcart" />
-      <div class="card-info">
-        <h4>PlantyVibes</h4>
-        <p>
-         This website mainly focuse on  Shooping cart feature.it displays dynamic products using Vanilla Javascript.
-        </p>
-        <div class="card-footer">
-          <img src="/Assets/images/lake.jpg" alt="author image" />
-          <p>Vanilla javascript,HTML5,CSS3</p>
-        </div>
-      </div>
-    </div>
-    <!-- card back  -->
-    <div class="card-side card-back">
-        <a href ="https://shhoping-cart.herokuapp.com/"><button class="btn td-btn outline green mt-30">Try it Live</a></button>
-         <a href="https://github.com/chaitali72/ShoopingCart"><i class="fab fa-github"></a></i>
-        </div>
-    </div>
-  <div class="card">
-    <!-- front of the card -->
-    <div class="card-side card-front">
-      <img src="/Assets/projects img/weatherapp.png" alt="project1" />
-      <div class="card-info">
-        <h4>Weatherly App</h4>
-        <p> This Application built with NodeJs, EJS, ExpressJs using  HTML5,CSS3,weather Ajaxlibrary webAPI. </p>
-        <div class="card-footer">
-          <img src="/Assets/images/mainimg.jpg" alt="weather image" />
-          <p>Nodejs,Ejs,WebAPI</p>
-          <!-- <i class="fab fa-github"></i> -->
-        </div>
-      </div>
-    </div>
-    <!-- card back  -->
-    <div class="card-side card-back">
-      <a href="https://weatherly-node-app.herokuapp.com/"><button class="btn td-btn outline green mt-30">Try it Live</a></button>
-       <a href="https://github.com/chaitali72/WeatherApp"><i class="fab fa-github"></a></i>
-    </div>
-  </div>
-  <!-- second -->
-  
-  <div class="card">
-      <!-- front of the card -->
-      <div class="card-side card-front">
-        <img src="/Assets/projects img/RandomReviews.png" alt="random reviews" />
-        <div class="card-info">
-          <h4>Random Reviews</h4>
-          <p>A review application where you can show the random review by different user using previous and next button using Vanilla Javascript,Html5,css3</p>
-          <div class="card-footer">
-            <img src="/Assets/images/lake.jpg" alt="author image" />
-            <p>Vanilla Js ,Random WebAPI </p>
-            <!-- <i class="fab fa-github"></i> -->
+          <div class="card">
+            <!-- front of the card -->
+            <div class="card-side card-front">
+              <img
+                src="/Assets/projects img/RandomReviews.png"
+                alt="random reviews"
+              />
+              <div class="card-info">
+                <h4>Random Reviews</h4>
+                <p>
+                  A review application where you can show the random review by
+                  different user using previous and next button using Vanilla
+                  Javascript,Html5,css3
+                </p>
+                <div class="card-footer">
+                  <!-- <img src="/Assets/images/lake.jpg" alt="author image" /> -->
+                  <p>Vanilla Js ,Random WebAPI</p>
+                  <!-- <i class="fab fa-github"></i> -->
+                </div>
+                <div class="card-content">
+                  <a href="" id="deployed-btns"
+                    ><i class="fa fa-link"></i> Live Website</a
+                  >
+                  <a href="" id="deployed-btns"
+                    ><i class="fa fa-github"></i> github</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- card back  -->
+          </div>
+          <!-- third -->
+          <div class="card">
+            <!-- front of the card -->
+            <div class="card-side card-front">
+              <img
+                src="/Assets/projects img/moviesearch.png"
+                alt=" movie search"
+              />
+              <div class="card-info">
+                <h4>Movie search</h4>
+                <p>
+                  A Movie Search Application using React Hooks And Movie db
+                  Fetch API
+                </p>
+                <div class="card-footer">
+                  <!-- <img src="/Assets/images/lake.jpg" alt="author image" /> -->
+                  <p>React,React hooks,ApI</p>
+                </div>
+                <div class="card-content">
+                  <a href="" id="deployed-btns"
+                    ><i class="fa fa-link"></i> Live Website</a
+                  >
+                  <a href="" id="deployed-btns"
+                    ><i class="fa fa-github"></i> github</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- card back  -->
+          </div>
+          <div class="card">
+            <!-- front of the card -->
+            <div class="card-side card-front">
+              <img src="/Assets/projects img/travel.png" alt=" movie search" />
+              <div class="card-info">
+                <h4>TREASURIE</h4>
+                <p>
+                  Treasurie website is a responsive web design based
+                  pixel-perfect recreation of a Photoshop design built with
+                  HTML5 and CSS3.
+                </p>
+                <div class="card-footer">
+                  <!-- <img src="/Assets/images/lake.jpg" alt="author image" /> -->
+                  <p>HTML5,CSS3,Responsive Web Design</p>
+                </div>
+                <div class="card-content">
+                  <a href="" id="deployed-btns"
+                    ><i class="fa fa-link"></i> Live Website</a
+                  >
+                  <a href="" id="deployed-btns"
+                    ><i class="fa fa-github"></i> github</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- card back  -->
+          </div>
+          <div class="card">
+            <!-- front of the card -->
+            <div class="card-side card-front">
+              <img src="/Assets/projects img/nomads.png" alt=" movie search" />
+              <div class="card-info">
+                <h4>NoMads</h4>
+                <p>
+                  my first trip with friends in canada.its a showcase of my
+                  awesome photos in website using html5,css3,Bootstrap template
+                </p>
+                <div class="card-footer">
+                  <!-- <img src="/Assets/images/lake.jpg" alt="author image" /> -->
+                  <p>HTML5,CSS3,Bootstrap Template</p>
+                </div>
+                <div class="card-content">
+                  <a href="" id="deployed-btns"
+                    ><i class="fa fa-link"></i> Live Website</a
+                  >
+                  <a href="" id="deployed-btns"
+                    ><i class="fa fa-github"></i> github</a
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <!-- card back  -->
-      <div class="card-side card-back">
-      <a href ="https://kind-wright-965cb6.netlify.app/"><button class="btn td-btn outline green mt-30">Try it Live </a></button>
-        <a href="https://github.com/chaitali72/ReviewsonWeb"><i class="fab fa-github"></a></i>
+    </section>
+    <!-- footer section -->
+    <section class="footer" id="contact">
+      <div class="section-intro">
+        <p>Design & Built by ❤️ CM</p>
       </div>
-    </div>
-<!-- third -->
-  <div class="card">
-  <!-- front of the card -->
-  <div class="card-side card-front">
-    <img src="/Assets/projects img/moviesearch.png" alt=" movie search" />
-    <div class="card-info">
-      <h4>Movie search</h4>
-      <p>A Movie Search Application using React Hooks And Movie db Fetch API</p>
-      <div class="card-footer">
-        <img src="/Assets/images/lake.jpg" alt="author image" />
-        <p>React,React hooks,ApI</p>
-      </div>
-    </div>
-  </div>
-  <!-- card back  -->
-  <div class="card-side card-back">
-    <a href="https://github.com/chaitali72/MovieSearchApp" ><button class="btn td-btn outline green mt-30">Try it Live</a></button>
-    <a href="https://github.com/chaitali72/MovieSearchApp"><i class="fab fa-github"></a></i>
-  </div>
-  </div>
-  <div class="card">
-    <!-- front of the card -->
-    <div class="card-side card-front">
-      <img src="/Assets/projects img/travel.png" alt=" movie search" />
-      <div class="card-info">
-        <h4>TREASURIE </h4>
-        <p>
-            Treasurie website is a responsive web design based pixel-perfect recreation of a Photoshop design built with HTML5 and CSS3.
-        </p>
-        <div class="card-footer">
-          <img src="/Assets/images/lake.jpg" alt="author image" />
-          <p>HTML5,CSS3,Responsive Web Design</p>
-        </div>
-      </div>
-    </div>
-    <!-- card back  -->
-    <div class="card-side card-back">
-        <a href ="https://naughty-pasteur-5291f9.netlify.app/"><button class="btn td-btn outline green mt-30">Try it Live </a></button>
-         <a href="https://github.com/chaitali72/ProjectByJuno"> <i class="fab fa-github"></a></i>
-        </div>
-    </div>
-    <div class="card">
-      <!-- front of the card -->
-      <div class="card-side card-front">
-        <img src="/Assets/projects img/nomads.png" alt=" movie search" />
-        <div class="card-info">
-          <h4>NoMads</h4>
-          <p>
-              my first trip with friends in canada.its a showcase of my awesome photos in website using html5,css3,Bootstrap template
-          </p>
-          <div class="card-footer">
-            <img src="/Assets/images/lake.jpg" alt="author image" />
-            <p>HTML5,CSS3,Bootstrap Template</p>
-          </div>
-        </div>
-      </div>
-      <!-- card back  -->
-      <div class="card-side card-back">
-          <a href ="https://wonderful-hopper-a03319.netlify.app/"><button class="btn td-btn outline green mt-30">Try it Live </a></button>
-           <a href="https://github.com/chaitali72/TravelwithFriends"> <i class="fab fa-github"></a></i>
-          </div>
-      </div>
-     
-  </div>
-  </div>
-</section>
-<!-- footer -->
-<!-- <section class="footer" id="contact">
-    <div class="section-intro foot">
-        <p>Design & built by  ❤️ CM </p>   
-        <ul>
-          <li class="contact-card__footer__link">
-          <a href="https://twitter.com/"><i class="fa fa-twitter col-lg-2"></i></a>
-          <a  href="https://www.linkedin.com/"><i class="fa fa-linkedin col-lg-2"></i></a>
-          <a  href="https://github.io"><i class="fa fa-github col-lg-2"></i></a>
-          <a href="https://codepen.com/"><i class="fa fab fa-codepen col-lg-2"></i></a>
-        </li>
-        </ul>
-    </div>
-</section> -->
-<section class="footer" id="contact">
-  <div class="section-intro ">
-      <p>Design & Built by  ❤️ CM </p>    
-  </div>
-</section>
-
-
-</body>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-    <script src="/Assets/flexslider/jquery.flexslider.js"></script>
-    <script src="/js/classie.js"></script>
-   <script src="/js/script.js"></script>
-   <!-- <script src="/Assets/textrotator/jquery.simple-text-rotator.js"></script> -->
-   <script src="https://kit.fontawesome.com/6168baa3db.js" crossorigin="anonymous"></script>
-   <script src="/js/waypoints.min.js"></script>
-    <script src="/js/modernizr.js"></script>
-    <script src="/js/main.js"></script>
-    </html>
+    </section>
+  </body>
+  <script
+    src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+    integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+    crossorigin="anonymous"
+  ></script>
+  <script src="/Assets/flexslider/jquery.flexslider.js"></script>
+  <script src="/js/classie.js"></script>
+  <script src="/js/script.js"></script>
+  <!-- <script src="/Assets/textrotator/jquery.simple-text-rotator.js"></script> -->
+  <script
+    src="https://kit.fontawesome.com/6168baa3db.js"
+    crossorigin="anonymous"
+  ></script>
+  <script src="/js/waypoints.min.js"></script>
+  <script src="/js/modernizr.js"></script>
+  <script src="/js/main.js"></script>
+</html>
