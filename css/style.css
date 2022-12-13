@@ -646,7 +646,6 @@ padding-top: 6rem;
   /* contact card container */
   .contact-card {
     width: 30em;
-    /* font-family: 'Roboto', sans-serif; */
     font-size: 1em;
     line-height: 1.5em;
     text-align: center;
@@ -665,23 +664,25 @@ padding-top: 6rem;
     width: 100%;
     height: 10em;
     padding-top: 6em;
-    background-image: url("https://images.pexels.com/photos/1365772/pexels-photo-1365772.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500") ;
+    background-image: url("https://images.pexels.com/photos/1365772/pexels-photo-1365772.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
     background-size: cover;
     background-color: #FAFAFA;
   }
+
   .contact-card__avatar {
-    width: 6em;
-    height: 6em;
+    width: 8em;
+    height: 8em;
     margin: auto;
-    background-image: url("/Assets/images/IMG_2302.jpg");
+    background-image: url("../Assets/images_projects/girl_coder.jpeg");
     background-size: cover;
-    background-color: #EEEEEE;
     border-radius: 100%;
+
   }
   .contact-card__name {
     margin-top: 3em;
     margin-bottom: .5em;
     font-size: 1.125rem;
+    color:var(--clr-primary-1)
   }
   .contact-card__link {
     display: block;
@@ -691,6 +692,7 @@ padding-top: 6rem;
   .contact-card__link a {
     color: #424242;
     text-decoration: none;
+    color:#1a2928;
   }
   .contact-card__link:hover {
     background-color: #FAFAFA;
